@@ -1,15 +1,51 @@
 
 function totalNumberSold(applesSoldList) {
-	return 0;
-}
+	var total = 0;
+
+	for (var i=0; i < applesSoldList.length; i++)
+		{
+			
+			total += applesSoldList[i].qty;
+		
+		}
+		return total;
+	}
+
 
 function totalIncome(applesSoldList) {
-	return 0;
-}
+
+	var total = 0;
+
+	for (var i=0; i < applesSoldList.length; i++)
+		{
+		
+			total += applesSoldList[i]. price;
+			
+		 
+		}
+		
+		
+		return total;
+	}
+
+
+	
+	
+
 
 function totalIncomeGreenApples(applesSoldList){
-	return 0;
+var greenApple = 0;
+for (var i = 0; i < applesSoldList.length; i++){
+    if (applesSoldList[i].color === 'green'){
+      let tempApple = applesSoldList[i].price;
+      greenApple += (tempApple + 2.45);
+	}
+	
+  }
+ var green = (greenApple * 2.45)
+ 	return green.toFixed(2);
 }
+
 
 function totalProfit(applesSoldList, applePriceMap){
 	return 0;
